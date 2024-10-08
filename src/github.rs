@@ -107,7 +107,7 @@ pub async fn command_fetch_release_distributions(args: &ArgMatches) -> Result<()
         )
         .build()?;
 
-    let release_version_range = pep440_rs::VersionSpecifier::from_str(">=3.9")?;
+    let release_version_range = pep440_rs::VersionSpecifier::from_str(">=3.11")?;
 
     let workflows = client.workflows(org, repo);
 
